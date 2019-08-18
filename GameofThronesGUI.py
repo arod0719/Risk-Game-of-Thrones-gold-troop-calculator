@@ -36,17 +36,17 @@ Label(text="Troops",relief=RIDGE, width=15).grid(row=5,column=1, pady=(50,0))
 Label(text="Gold",relief=RIDGE, width=15).grid(row=6,column=1)
 
 #creates answer fields to allow user to type in values
-entryCastle = Entry(root)
+entryCastle = Entry(root,justify='center')
 entryCastle.grid(row=1,column=2)
-entryLand = Entry(root)
+entryLand = Entry(root,justify='center')
 entryLand.grid(row=2,column=2)
-entryPort = Entry(root)
+entryPort = Entry(root,justify='center')
 entryPort.grid(row=3,column=2)
-entryBonus = Entry(root)
+entryBonus = Entry(root,justify='center')
 entryBonus.grid(row=4,column=2)
-entryAnswerTroops = Entry(root, state="readonly")
+entryAnswerTroops = Entry(root, state="readonly",justify='center')
 entryAnswerTroops.grid(row=5, column=2, pady=(50,0))
-entryAnswerGold = Entry(root, state="readonly")
+entryAnswerGold = Entry(root, state="readonly",justify='center')
 entryAnswerGold.grid(row=6, column=2)
 
 def calculate():
